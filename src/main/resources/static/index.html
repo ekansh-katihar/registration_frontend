@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sign In</title>
+    <script src="auth.js" defer></script>
+    <script src="page_builder.js" defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-GSw8blwWchxmvxjyq3X9zvuk8WjryLm9tquyz/rPbZMUVx8aUCpMq0+57qI3y5F5"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container py-3">
+      <header id ="main_header"> </header>
+      <br/><br/><br/><br/>
+      <main>
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">AI messenger</h2>
+            <p class="lead">Bring intelligence to messenger</p>
+          </div>
+
+          <div class="col-md-5">
+            <div id="g_id_onload"
+            data-client_id="721312221625-2qr8k4kghj2oet7dsctq5up9sbrha2gg.apps.googleusercontent.com""
+            data-context="signin"
+            data-ux_mode="popup"
+            data-callback="jfx"
+            data-itp_support="true"></div>
+
+            <div class="g_id_signin"
+            data-type="standard"
+            data-shape="rectangular"
+            data-theme="outline"
+            data-text="signin_with"
+            data-size="large"
+            data-logo_alignment="left"></div>
+          </div>
+        </div>
+        
+        <hr class="featurette-divider" style="margin: 5rem 0;">
+        <div id="subscriptions" class="subscription"></subscriptions>
+      </main>
+      <footer id="main_footer">
+      </footer>
+    </div>
+    <!-- jQuery and Bootstrap JS -->
+  </body>
+</html>
