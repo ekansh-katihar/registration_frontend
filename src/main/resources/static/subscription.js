@@ -1,4 +1,27 @@
+
+
 $(document).ready(function() {
+  $(".subscription").click(function(e) {
+  var token = sessionStorage.getItem('access_token');
+	  $.ajax({
+      url: "/create_subscription",
+      type: "POST",
+      data: '',
+      success: function(response) {
+        // handle successful response
+        console.log(response);
+      },
+      error: function(xhr) {
+        // handle error response
+        console.log(xhr.responseText);
+      }
+    });
+  });
+
+
+
+
+
   var token = sessionStorage.getItem('access_token');
   redirectToIndexIfTokenNotValid(token)
   $.ajax({

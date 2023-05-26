@@ -1,13 +1,17 @@
 $(document).ready(function() {
-  
   $(".submit.btn").click(function(e) {
+    var token = getToken();
     e.preventDefault(); // prevent default form submission behavior
     var formData= $(this).parent("form").serialize(); // get form data as string
-	var mockData = {"phone_number":"438822822"}; 
+	  var mockData = {"phone_number":"438822822"}; 
     // send AJAX request to API endpoint
     $.ajax({
-      url: "/update_phone",
+      url: "http://localhost:8080/authnz/update-phone",
       type: "POST",
+      dataType: "json",
+      headers: {
+        "Authorization": "Bearer "+token
+      },
       data: mockData,
       success: function(response) {
         // handle successful response
@@ -19,13 +23,21 @@ $(document).ready(function() {
       }
     });
   });
-  $(".subscription").click(function(e) {
+  
+  $(document).on("click", "button.subscription", function(e) {
+    var token = getToken();
+    plan = $(this).attr('name')
 	  $.ajax({
-      url: "/create_subscription",
+      url: "http://localhost:8080/authnz/create-subscription?plan="+plan,
       type: "POST",
-      data: '',
+      dataType: "json",
+      headers: {
+        "Authorization": "Bearer "+token
+      },
       success: function(response) {
-        // handle successful response
+        window.sessionStorage.setItem('subscriptionId', response.SUBSCRIPTION_ID);
+        window.sessionStorage.setItem('clientSecret', response.CLIENT_SECRET);
+        window.location.href = '/payment.html';
         console.log(response);
       },
       error: function(xhr) {
