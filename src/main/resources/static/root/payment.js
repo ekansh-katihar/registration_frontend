@@ -7,7 +7,7 @@ $(document).ready(function() {
   const subscriptionId = window.sessionStorage.getItem('subscriptionId');
   const clientSecret = window.sessionStorage.getItem('clientSecret');
   if(subscriptionId == null || clientSecret == null ){
-    window.location.href ='/home.html';
+    window.location.href ='/root/home.html';
   }
 
 
@@ -60,7 +60,7 @@ $(document).ready(function() {
       } else {
         // Redirect the customer to their account page
         setMessage('Success! Redirecting to your account.');
-        window.location.href = '/account.html';
+        window.location.href = '/root/account.html';
       }
     });
   });

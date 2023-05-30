@@ -1,11 +1,12 @@
 $(document).ready(function() {
+  console.log('window.location.pathname '+window.location.pathname )
   header_callback = function() { 
-    if(window.location.pathname != '/index.html'){
+    if(window.location.pathname != '/root/index.html'){
       $('#nav_login').hide();
     }
   }
   subscription_callback = function() { 
-    if(window.location.pathname == '/index.html'){
+    if(window.location.pathname == '/root/index.html'){
       $('button.subscription').hide();
     }
   }

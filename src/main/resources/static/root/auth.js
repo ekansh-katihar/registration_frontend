@@ -4,7 +4,7 @@ function jfx(response) {
     // var token = response.credentials;
     // TODO: Send the token to the server for verification and login
     sessionStorage.setItem('access_token', response.credential);
-    window.location.href  = '/home.html';
+    window.location.href  = '/root/home.html';
   } else {
     //TODO when will this get called? 
     // There was an error with the authentication

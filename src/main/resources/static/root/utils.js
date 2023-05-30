@@ -30,8 +30,8 @@ function isJwtValid(jwtToken) {
   }
   function redirectToIndexIfTokenNotValid(token){
     if(token ===null ||  !isJwtValid(token)){
-        if(window.location.pathname != '/index.html'){
-            window.location.href ='/index.html';
+        if(window.location.pathname != '/root/index.html'){
+            window.location.href ='/root/index.html';
         }
     }
   }
@@ -43,8 +43,8 @@ function isJwtValid(jwtToken) {
   $(document).ready(function() {
     redirectToIndexIfTokenNotValid(sessionStorage.getItem('access_token'));
     if(sessionStorage.getItem('access_token') !=null &&  isJwtValid(sessionStorage.getItem('access_token'))){
-        if(window.location.pathname === '/index.html'){
-            window.location.href ='/home.html';
+        if(window.location.pathname === '/root/index.html'){
+            window.location.href ='/root/home.html';
         }
     }
   });

@@ -37,7 +37,7 @@ $(document).ready(function() {
       success: function(response) {
         window.sessionStorage.setItem('subscriptionId', response.SUBSCRIPTION_ID);
         window.sessionStorage.setItem('clientSecret', response.CLIENT_SECRET);
-        window.location.href = '/payment.html';
+        window.location.href = '/root/payment.html';
         console.log(response);
       },
       error: function(xhr) {
