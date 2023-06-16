@@ -1,0 +1,48 @@
+<div class="row  mb-2 text-center">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3" style="color: white; background-color: #007bff;">
+          <h2 class="my-0 fw-normal">Trial</h2>
+          <h5 class="my-0 fw-normal">With your ChatGPT API Key</h5>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">$0</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>For first 10 Messages</li>
+            <li>No credit card needed</li>
+            <li>Sign-in to get started</li>
+          </ul>
+          <button type="button" class="subscription w-100 btn btn-lg btn-outline-primary" name="FREE" onclick='redirectTo("/root/register_form.html")'>Free</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm" id="premium_info" style="display: none;">
+        <div class="card-header py-3" style="color: white; background-color: #007bff;">
+          <h2 class="my-0 fw-normal">Premium</h2>
+          <h5 class="my-0 fw-normal">With your ChatGPT API Key</h5>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">$.01</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>For each message</li>
+            <li>Billed daily</li>
+            <li>Sign-in to get started</li>
+          </ul>
+          <button type="button" class="subscription w-100 btn btn-lg btn-primary"  name="BASIC" >Basic</button>
+        </div>
+      </div>
+      <div class="card mb-4 rounded-3 shadow-sm" id ="premium_stripe" style="display: none;">
+        <div class="card-header py-3" style="color: white; background-color: #007bff;">
+          <h2 class="my-0 fw-normal">Premium</h2>
+          <h5 class="my-0 fw-normal">With your ChatGPT API Key</h5>
+        </div>
+        <div class="card-body">
+          <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+          <stripe-pricing-table pricing-table-id="prctbl_1NBzHlJ4tvAH7yW7HbtHDKsd"
+            publishable-key="pk_test_51N5Ac2J4tvAH7yW7hPQeNiWNM4wLqVmLpnH0L8eAmCbTQrvzcTm0T03bOr5apHI1g0p1xteunAkzbCfDXd6wpi8w00yPSHUko4">
+          </stripe-pricing-table>
+        </div>
+      </div>
+    </div>
+  </div>
