@@ -1,0 +1,24 @@
+<div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
+  <div class="card p-4">
+    <div class="image d-flex flex-column justify-content-center align-items-center">
+      <button class="btn btn-secondary">
+      <img alt="" id="profile_image" height="100" width="100" />
+      </button> 
+      <span class="name mt-3" id="profile_name"></span>
+      <span class="idd" id="profile_phone_number"></span> 
+	    <span class="name mt-3" id="profile_subscription"></span>
+       
+      <button class="btn1 btn-dark" id = "update_profile" onclick='redirectTo("/root/register_form/update_form.html")' >Update Profile</button>
+      <div class="text mt-3" style="display: none;" id = "active_subscription_message">
+        <span>
+        You can now WhatsApp with ChatGPT!<br />
+        <br />
+        Give it a shot!
+        </span>
+        <div class="px-2 rounded mt-4 date"><span class="manage_subscription" style="display: none;" id = "stripe_subscription_message">
+          <a href="https://billing.stripe.com/p/login/test_5kA9Dbcvw1gybzabII">Manage Subscription</a>
+        </span></div>
+      </div>
+    </div>
+  </div>
+</div>

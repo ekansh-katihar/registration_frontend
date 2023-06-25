@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Sign In</title>
-    <script src="utils.js" defer></script>
-    <script src="auth.js" defer></script>
-    <script src="page_builder.js" defer></script>
+    <script src="shared/js/utils.js" defer></script>
+    <script src="shared/js/auth.js" defer></script>
+    <script src="shared/js/page_builder.js" defer></script>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
@@ -20,13 +20,14 @@
       <header id ="main_header"> </header>
       <br/><br/><br/><br/>
       <main>
-        <div class="row featurette">
+        <div class="row justify-content-center">
           <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">AI messenger</h2>
-            <p class="lead">Bring intelligence to messenger</p>
+            <h2 class="featurette-heading fw-normal lh-1">WhatsApp with ChatGPT</h2>
+            <p class="lead">Ask question from ChatGPT directly via WhatsApp</p>
           </div>
-
-          <div class="col-md-5">
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-7">
             <div id="g_id_onload"
             data-client_id="721312221625-2qr8k4kghj2oet7dsctq5up9sbrha2gg.apps.googleusercontent.com""
             data-context="signin"
@@ -45,10 +46,10 @@
         </div>
         
         <hr class="featurette-divider" style="margin: 5rem 0;">
-        <div id="subscriptions" class="subscription"></subscriptions>
+        <div id="subscriptions" class="subscription"></div>
       </main>
-      <footer id="main_footer">
-      </footer>
+      <div id="main_footer">
+      </div>
     </div>
     <!-- jQuery and Bootstrap JS -->
   </body>

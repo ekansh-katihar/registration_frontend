@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sign In</title>
+    <!-- Bootstrap CSS -->
+    <script src="/root/shared/js/utils.js" defer></script>
+    <script src="/root/shared/js/page_builder.js" defer></script>
+    <script src="js/update_form.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container py-3">
+      <header id ="main_header"> </header>
+      <main>
+        <div class="row  mb-1 text-center">
+          <div class="col-md-6 offset-md-3">
+            <div class="alert" role="alert" id="form_save_message"  style="display: none;"></div>
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3" >
+                <h2 class="my-0 fw-normal">Try Subscription</h2>
+                <h5 class="my-0 fw-normal"><a href="/root/home/home.html">Home</a>
+                </h5>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="phoneNumber"></label>
+                    <input type="text" class="form-control" id="phoneNumber" aria-describedby="phoneNumber" placeholder="Enter phone number with country code">
+                    <small id="phoneNumber" class="form-text text-muted">You will use this phone number  to WhatsApp with ChatGPT</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="API Key"></label>
+                    <input type="text" class="form-control" id="apiKey" aria-describedby="apiKey" placeholder="API Key for the chat GPT">
+                    <small id="apiKey" class="form-text text-muted">This key is needed for you to interact with ChatGPT</small>
+                  </div>
+                  <button type="submit" class="btn btn-primary" id="register"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+         
+      </main>
+      <div id="main_footer">
+      </div>
+    </div>
+  </body>
+</html>

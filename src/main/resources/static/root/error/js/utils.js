@@ -1,7 +1,12 @@
 
+function redirectTo(location) {
+  window.location.href = location;
+}
+
 function isJwtValid(jwtToken) {
-    // Decode the JWT token
+  // Decode the JWT token
     var decodedToken = parseJwt(jwtToken);
+    if(decodedToken == null ) return false;
   
     // Get the expiration time from the decoded token
     var expirationTime = decodedToken.exp;
@@ -20,6 +25,7 @@ function isJwtValid(jwtToken) {
   }
 
   function parseJwt(token) {
+    if( token == null) return null;
     var base64Url = token.split('.')[1];
     var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
     var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
@@ -28,6 +34,7 @@ function isJwtValid(jwtToken) {
   
     return JSON.parse(jsonPayload);
   }
+
   function redirectToIndexIfTokenNotValid(token){
     if(token ===null ||  !isJwtValid(token)){
         if(window.location.pathname != '/root/index.html'){
