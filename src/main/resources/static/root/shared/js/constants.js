@@ -1,0 +1,1 @@
+registration_url = "http://13.58.226.146:8080/"

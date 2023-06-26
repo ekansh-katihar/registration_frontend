@@ -14,11 +14,11 @@ remoteUrl = null;
 subscriptionType = null;
 if("TRIAL" == paramValue) {
   $('#register').text('Subscribe');
-  remoteUrl = "http://localhost:8080/authnz/subscribe"; 
+  remoteUrl = registration_url+"authnz/subscribe"; 
   subscriptionType = 'TRIAL'
 }else{
   $('#register').text('Update');
-  remoteUrl = "http://localhost:8080/authnz/update-user"; 
+  remoteUrl = registration_url+"authnz/update-user"; 
 }
 
   $("#register").click(function(e) {

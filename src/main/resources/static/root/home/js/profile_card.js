@@ -4,7 +4,7 @@ function getProfileInformation(){
   redirectToIndexIfTokenNotValid(token);
   profile=null;
   $.ajax({
-    url: "http://localhost:8080/authnz/home",
+    url: registration_url+"authnz/home",
     type: "GET",
     dataType: "json",
     headers: {
