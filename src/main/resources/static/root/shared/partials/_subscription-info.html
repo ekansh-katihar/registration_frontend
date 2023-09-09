@@ -1,0 +1,57 @@
+<div class="row  mb-2 text-center">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3" style="color: white; background-color: #007bff;">
+          <h1 class="my-0 fw-normal">Trial</h1>
+          <h5 class="my-0 fw-normal">With your ChatGPT API Key</h5>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title pricing-card-title">$0</h2>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>5 Messages per day</li>
+            <li>No credit card needed</li>
+            <li>Sign-in to get started</li>
+          </ul>
+          <button type="button" class="subscription w-100 btn btn-lg btn-outline-primary" name="FREE" onclick='redirectTo("/root/register_form/update_form.html?subscription=TRIAL")'>Free</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm" id="premium_info" style="display: none;">
+        <div class="card-header py-3" style="color: white; background-color: #007bff;">
+          <h1 class="my-0 fw-normal">Premium</h1><h6>(coming soon)</h6>
+          <h5 class="my-0 fw-normal">With your ChatGPT API Key</h5>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title pricing-card-title">$.01 per message</h2>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Unlimited message</li>
+            <li>Billed daily</li>
+            <li>Sign-in to get started</li>
+          </ul>
+          <button type="button" class="subscription w-100 btn btn-lg btn-primary"  name="BASIC" >Basic</button>
+        </div>
+      </div>
+      <div class="card mb-4 rounded-3 shadow-sm" id ="premium_stripe" style="display: none;">
+        <div class="card-header py-3" style="color: white; background-color: #007bff;">
+          <h1 class="my-0 fw-normal">Premium</h1><h6>(coming soon)</h6>
+          <h5 class="my-0 fw-normal">With your ChatGPT API Key</h5>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title pricing-card-title">$.01 per message</h2>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Unlimited message</li>
+            <li>Billed daily</li>
+            <li>Sign-in to get started</li>
+          </ul>
+          <!--
+          <button type="button" class="subscription w-100 btn btn-lg btn-primary"  name="BASIC" >Basic</button>
+          <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+          <stripe-pricing-table pricing-table-id="prctbl_1NBzHlJ4tvAH7yW7HbtHDKsd"
+            publishable-key="pk_test_51N5Ac2J4tvAH7yW7hPQeNiWNM4wLqVmLpnH0L8eAmCbTQrvzcTm0T03bOr5apHI1g0p1xteunAkzbCfDXd6wpi8w00yPSHUko4">
+          </stripe-pricing-table>
+         -->
+        </div>
+      </div>
+    </div>
+  </div>
