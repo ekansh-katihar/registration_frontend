@@ -1,1 +1,1 @@
-registration_url = "http://13.58.226.146:8080/"
+registration_url = "https://pqs2e46dm6nq4cjc7nlbtum5fy0mjzpd.lambda-url.us-east-2.on.aws/"
