@@ -18,3 +18,6 @@ Now access to `http://localhost:4242/root/index.html`
 
 ## Publish changes with Github Action
 To make any changes create a branch and get it merged to the `main` branch. On merging to `main` Github Action will push up the changes to AWS S3 `intg-2023` bucket. 
+
+**To download the folder from s3 bucket to your local directory**
+`aws s3 cp s3://intg-2023/root root --recursive`
